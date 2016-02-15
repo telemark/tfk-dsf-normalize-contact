@@ -11,10 +11,17 @@ function normalizeContact (dsf) {
 
   var contact = {}
 
+  contact.personalIdNumber = dsf.FODT.toString() + dsf.PERS.toString()
+  contact.birthDate = resolveBirthDate(dsf.FODT, dsf.FODTAR)
   contact.firstName = capitalize.words(dsf['NAVN-F'].toLowerCase())
   contact.middleName = capitalize.words(dsf['NAVN-M'].toLowerCase())
   contact.lastName = capitalize.words(dsf['NAVN-S'].toLowerCase())
   contact.fullname = resolveFullName(contact.firstName, contact.middleName, contact.lastName)
-  contact.personalIdNumber = dsf.FODT.toString() + dsf.PERS.toString()
-  contact.birthDate = resolveBirthDate(dsf.FODT, dsf.FODTAR)
+  contact.address = capitalize.words(dsf.ADR.toLowerCase())
+  contact.zip = dsf.POSTN
+  contact.city = capitalize.words(dsf.POSTS.toLowerCase())
+
+  return contact
 }
+
+module.exports = normalizeContact
