@@ -16,7 +16,7 @@ function normalizeContact (dsf) {
   contact.firstName = capitalize.words(dsf['NAVN-F'].toLowerCase())
   contact.middleName = capitalize.words(dsf['NAVN-M'].toLowerCase())
   contact.lastName = capitalize.words(dsf['NAVN-S'].toLowerCase())
-  contact.fullname = resolveFullName(contact.firstName, contact.middleName, contact.lastName)
+  contact.fullName = resolveFullName(contact.firstName, contact.middleName, contact.lastName)
   contact.address = capitalize.words(dsf.ADR.toLowerCase())
   contact.zip = dsf.POSTN
   contact.city = capitalize.words(dsf.POSTS.toLowerCase())
