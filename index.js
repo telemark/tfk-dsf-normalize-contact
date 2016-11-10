@@ -1,10 +1,10 @@
 'use strict'
 
-var capitalize = require('capitalize')
-var resolveFullName = require('./lib/resolve-full-name')
-var resolveBirthDate = require('./lib/resolve-birth-date')
+const resolveBirthDate = require('birthdate-from-id')
+const capitalize = require('capitalize')
+const resolveFullName = require('./lib/resolve-full-name')
 
-function normalizeContact (dsf) {
+module.exports = (dsf) => {
   if (!dsf) {
     throw new Error('Missing required input: dsf object')
   }
@@ -12,7 +12,7 @@ function normalizeContact (dsf) {
   var contact = {}
 
   contact.personalIdNumber = dsf.FODT.toString() + dsf.PERS.toString()
-  contact.birthDate = resolveBirthDate(dsf.FODT, dsf.FODTAR)
+  contact.birthDate = resolveBirthDate(`${dsf.FODT}${dsf.PERS}`)
   contact.firstName = capitalize.words(dsf['NAVN-F'].toLowerCase())
   contact.middleName = dsf['NAVN-M'].length > 0 ? capitalize.words(dsf['NAVN-M'].toLowerCase()) : ''
   contact.lastName = capitalize.words(dsf['NAVN-S'].toLowerCase())
@@ -23,5 +23,3 @@ function normalizeContact (dsf) {
 
   return contact
 }
-
-module.exports = normalizeContact
