@@ -34,9 +34,9 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "coveralls": "^2.11.6",
-    "standard": "^6.0.5",
-    "tap": "^5.4.4"
+    "coveralls": "2.11.14",
+    "standard": "8.5.0",
+    "tap": "8.0.0"
   },
   "dependencies": {
     "capitalize": "1.0.0"
