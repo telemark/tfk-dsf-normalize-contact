@@ -22,7 +22,7 @@ $ git clone
 cd into directory and run setup
 
 ```sh
-$ npm run setup
+$ npm install
 ```
 
 ## Usage
