@@ -3,6 +3,8 @@
 [![Code Climate](https://codeclimate.com/github/telemark/tfk-dsf-normalize-contact/badges/gpa.svg)](https://codeclimate.com/github/telemark/tfk-dsf-normalize-contact)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # tfk-dsf-normalize-contact
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-dsf-normalize-contact.svg)](https://greenkeeper.io/)
 Maps contact information from dsf to something more useful
 
 ## Installation
