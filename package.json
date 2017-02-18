@@ -46,7 +46,7 @@
     "tap": "10.1.0"
   },
   "dependencies": {
-    "birthdate-from-id": "1.0.10",
+    "birthdate-from-id": "1.0.11",
     "capitalize": "1.0.0"
   }
 }
