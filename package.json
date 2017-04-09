@@ -42,8 +42,8 @@
   "devDependencies": {
     "coveralls": "2.11.16",
     "nsp": "2.6.3",
-    "standard": "8.6.0",
-    "tap": "10.2.0"
+    "tap": "10.3.1"
+    "standard": "10.0.1",
   },
   "dependencies": {
     "birthdate-from-id": "1.0.12",
