@@ -2,9 +2,10 @@
 [![Coverage Status](https://coveralls.io/repos/telemark/tfk-dsf-normalize-contact/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/tfk-dsf-normalize-contact?branch=master)
 [![Code Climate](https://codeclimate.com/github/telemark/tfk-dsf-normalize-contact/badges/gpa.svg)](https://codeclimate.com/github/telemark/tfk-dsf-normalize-contact)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-dsf-normalize-contact.svg)](https://greenkeeper.io/)
+
 # tfk-dsf-normalize-contact
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-dsf-normalize-contact.svg)](https://greenkeeper.io/)
 Maps contact information from dsf to something more useful
 
 ## Installation
@@ -32,8 +33,8 @@ $ npm install
 ```javascript
 'use strict'
 
-var normalizeContact = require('tfk-dsf-normalize-contact')
-var dsf = {
+const normalizeContact = require('tfk-dsf-normalize-contact')
+const dsf = {
   'FODT': '181171',
   'PERS': '12345',
   'INR': '18117108976',
@@ -72,4 +73,7 @@ Returns
 ```
 
 ## License
+
 [MIT](LICENSE)
+
+![Robohash image of tfk-dsf-normalize-contact](https://robots.kebabstudios.party/tfk-dsf-normalize-contact.png "Robohash image of tfk-dsf-normalize-contact")

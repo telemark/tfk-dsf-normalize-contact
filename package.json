@@ -1,7 +1,7 @@
 {
   "name": "tfk-dsf-normalize-contact",
   "description": "Transforms contact information from dsf to something useful",
-  "version": "2.0.16",
+  "version": "2.1.0",
   "author": {
     "name": "Jonas Enge",
     "email": "jonas.enge@gmail.com",
@@ -16,12 +16,13 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=4.6.2"
+    "node": ">=4.8.3"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
-    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls"
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix"
   },
   "keywords": [
     "tfk",
@@ -33,11 +34,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/tfk-dsf-normalize-contact.git"
+    "url": "https://github.com/telemark/tfk-dsf-normalize-contact.git"
   },
   "bugs": {
-    "url": "http://github.com/telemark/tfk-dsf-normalize-contact/issues"
+    "url": "https://github.com/telemark/tfk-dsf-normalize-contact/issues"
   },
+  "homepage": "https://github.com/telemark/tfk-dsf-normalize-contact",
   "license": "MIT",
   "devDependencies": {
     "coveralls": "2.13.1",
