@@ -43,9 +43,8 @@
   "license": "MIT",
   "devDependencies": {
     "coveralls": "2.13.1",
+    "tap": "10.6.0",
     "nsp": "2.7.0",
-    "tap": "10.5.0",
-    "standard": "10.0.2"
   },
   "dependencies": {
     "birthdate-from-id": "1.0.12",
