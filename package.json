@@ -1,7 +1,7 @@
 {
   "name": "tfk-dsf-normalize-contact",
   "description": "Transforms contact information from dsf to something useful",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "author": {
     "name": "Jonas Enge",
     "email": "jonas.enge@gmail.com",
@@ -48,7 +48,7 @@
     "standard": "10.0.3"
   },
   "dependencies": {
-    "birthdate-from-id": "1.1.0",
+    "birthdate-from-id": "1.2.0",
     "capitalize": "1.0.0"
   }
 }
