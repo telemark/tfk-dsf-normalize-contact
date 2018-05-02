@@ -42,7 +42,7 @@
   "homepage": "https://github.com/telemark/tfk-dsf-normalize-contact",
   "license": "MIT",
   "devDependencies": {
-    "coveralls": "2.13.1",
+    "coveralls": "2.13.3",
     "nsp": "2.7.0",
     "tap": "10.7.2",
     "standard": "10.0.3"
