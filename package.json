@@ -48,7 +48,7 @@
     "standard": "10.0.3"
   },
   "dependencies": {
-    "birthdate-from-id": "1.2.0",
+    "birthdate-from-id": "1.2.2",
     "capitalize": "1.0.0"
   }
 }
