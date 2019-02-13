@@ -7,7 +7,7 @@ tap.throws(
   function () {
     resolveFullName()
   },
-  {message: 'Missing required input: firstname'},
+  { message: 'Missing required input: firstname' },
   'Throws if firstname not supplied'
 )
 
@@ -15,7 +15,7 @@ tap.throws(
   function () {
     resolveFullName('firstname', 'middlename')
   },
-  {message: 'Missing required input: lastname'},
+  { message: 'Missing required input: lastname' },
   'Throws if lastname not supplied'
 )
 

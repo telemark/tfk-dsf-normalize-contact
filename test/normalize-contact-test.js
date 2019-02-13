@@ -19,6 +19,6 @@ tap.throws(
   function () {
     normalizeContact()
   },
-  {message: 'Missing required input: dsf object'},
+  { message: 'Missing required input: dsf object' },
   'Throws if dsf object not supplied'
 )
