@@ -2,7 +2,6 @@
 [![Coverage Status](https://coveralls.io/repos/telemark/tfk-dsf-normalize-contact/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/tfk-dsf-normalize-contact?branch=master)
 [![Code Climate](https://codeclimate.com/github/telemark/tfk-dsf-normalize-contact/badges/gpa.svg)](https://codeclimate.com/github/telemark/tfk-dsf-normalize-contact)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-dsf-normalize-contact.svg)](https://greenkeeper.io/)
 
 # tfk-dsf-normalize-contact
 
@@ -30,9 +29,7 @@ $ npm install
 
 ## Usage
 
-```javascript
-'use strict'
-
+```JavaScript
 const normalizeContact = require('tfk-dsf-normalize-contact')
 const dsf = {
   'FODT': '181171',
@@ -58,7 +55,7 @@ console.log(normalizeContact(dsf))
 
 Returns
 
-```javascript
+```JavaScript
 {
   'personalIdNumber': '18117112345',
   'birthDate': '1971-11-18',
@@ -75,5 +72,3 @@ Returns
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of tfk-dsf-normalize-contact](https://robots.kebabstudios.party/tfk-dsf-normalize-contact.png "Robohash image of tfk-dsf-normalize-contact")
