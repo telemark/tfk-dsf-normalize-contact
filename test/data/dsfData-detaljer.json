@@ -1,0 +1,81 @@
+{
+  "RESULT": {
+    "HOV": {
+      "FODT": "240698",
+      "PERS": "44444",
+      "INR": "24069855555",
+      "FODTAR": "1998",
+      "STAT-KD": "1",
+      "STAT": "BOSATT",
+      "NAVN-S": "GRÅ",
+      "NAVN-F": "GANDALF",
+      "NAVN-M": "GEORG",
+      "NAVN": "GRÅ GANDALF GEORG",
+      "NAVN-D": "19982222",
+      "ADRR": "20190210",
+      "ADRF": "2019003",
+      "ADR": "OPPFUNNET GATE 30",
+      "POSTN": "3717",
+      "POSTS": "SKIEN",
+      "KOMNR": "0806",
+      "KOMNA": "SKIEN",
+      "GATE": "12300",
+      "HUS": "0030",
+      "ADRTYPE": "O",
+      "INVF": null,
+      "INVF-N": null,
+      "INVF-R": null,
+      "INVF-F": null,
+      "FKOM": "0807",
+      "FKOM-N": "NOTODDEN",
+      "FKOM-R": "20180807",
+      "FKOM-F": "20180801",
+      "UTVT": null,
+      "UTVT-N": null,
+      "UTVT-R": null,
+      "UTVT-F": null,
+      "AARSADR": "24",
+      "SPES-KD": "0",
+      "SPES": "VANLIG BOSATT",
+      "SKKR": "0010",
+      "VAKR": "0001",
+      "GRUNNKR": "0113",
+      "MELD": null,
+      "K-FAMNR": "24069844444",
+      "FAMNR-D": "20180807",
+      "PERSKODE": "1",
+      "MOR-FODT": "010166",
+      "MOR-PERS": "33333",
+      "MOR-INR": "01016622222",
+      "FAR-FODT": "020265",
+      "FAR-PERS": "11111",
+      "FAR-INR": "02026599999",
+      "Barn": [
+        {
+          "BAR-FODT": "020280",
+          "BAR-PERS": "99999",
+          "BAR-INR": "02028099999",
+          "BAR-KJO": "M"
+        },
+        {
+          "BAR-FODT": "040481",
+          "BAR-PERS": "88888",
+          "BAR-INR": "04048166666",
+          "BAR-KJO": "K"
+        }
+      ],
+      "SIVS-KD": "1",
+      "SIVS": "UGIFT",
+      "AARSSIV": "01",
+      "Statsborgerskap": {
+        "STATB-KD": "000",
+        "STATB": "NORSK"
+      },
+      "KJONN": "M",
+      "AARSNVN": "06",
+      "FODKNR": "0806",
+      "FODK": "SKIEN",
+      "FODS": "TELEMARK SSH"
+    }
+  }
+}
