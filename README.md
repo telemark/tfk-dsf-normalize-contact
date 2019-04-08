@@ -46,7 +46,27 @@ const dsf = {
   'POSTN': '3715',
   'POSTS': 'SKIEN',
   'SPES-KD': '0',
-  'SPES': 'VANLIG BOSATT'
+  'SPES': 'VANLIG BOSATT',
+  'KJONN': 'M',
+  'STAT': 'BOSATT',
+  'MOR-FODT': '010166',
+  'MOR-PERS': '33333',
+  'FAR-FODT': '020265',
+  'FAR-PERS': '11111',
+  'Barn': [
+        {
+          'BAR-FODT': '020280',
+          'BAR-PERS': '99999',
+          'BAR-INR': '02028099999',
+          'BAR-KJO': 'M'
+        },
+        {
+          'BAR-FODT': '040481',
+          'BAR-PERS': '88888',
+          'BAR-INR': '04048166666',
+          'BAR-KJO': 'K'
+        }
+      ],
 }
 
 console.log(normalizeContact(dsf))
@@ -57,15 +77,25 @@ Returns
 
 ```JavaScript
 {
-  'personalIdNumber': '18117112345',
-  'birthDate': '1971-11-18',
+  'personalIdNumber': '24069844444',
+  'birthDate': '1998-06-24',
   'firstName': 'Gandalf',
   'middleName': 'Georg',
   'lastName': 'Grå',
   'fullName': 'Gandalf Georg Grå',
-  'address': 'Fylkesbakken 10',
-  'zip': '3715',
-  'city': 'Skien'
+  'address': 'Oppfunnet Gate 30',
+  'zip': '3717',
+  'city': 'Skien',
+  'gender': 'Male',
+  'alive': true,
+  'motherIdNumber': '01016633333',
+  'fatherIdNumber': '02026511111',
+  'spouseIdNumber': '',
+  'children':
+  [
+    { 'childIdNumber': '02028099999' },
+    { 'childIdNumber': '04048188888' }
+  ]
 }
 ```
 
