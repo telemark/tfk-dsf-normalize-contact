@@ -13,5 +13,20 @@
   "POSTN": "3715",
   "POSTS": "SKIEN",
   "SPES-KD": "0",
-  "SPES": "VANLIG BOSATT"
+  "SPES": "VANLIG BOSATT",
+  "MOR-FODT": "010166",
+  "MOR-PERS": "33333",
+  "FAR-FODT": "020265",
+  "FAR-PERS": "11111",
+  "Barn": [
+    {
+      "BAR-FODT": "020280",
+      "BAR-PERS": "99999"
+    },
+    {
+      "BAR-FODT": "040481",
+      "BAR-PERS": "88888"
+    }
+  ],
+  "KJONN": "M"
 }
