@@ -20,8 +20,8 @@ module.exports = (dsf) => {
   contact.address = capitalize.words(dsf.ADR ? dsf.ADR.toLowerCase() : '')
   contact.zip = dsf.POSTN || ''
   contact.city = capitalize.words(dsf.POSTS ? dsf.POSTS.toLowerCase() : '')
-  contact.gender = dsf.KJONN === 'M' ? 'Male' : 'Female'
-  contact.alive = dsf.STAT !== 'DØD' ? true : false
+  contact.gender = dsf.KJONN ? (dsf.KJONN === 'M' ? 'Male' : 'Female') : ''
+  contact.alive = dsf.STAT ? (dsf.STAT !== 'DØD' ? true : false) : ''
   contact.motherIdNumber = dsf['MOR-FODT'] ? ( dsf['MOR-FODT'].toString() + dsf['MOR-PERS'].toString() ) : ''
   contact.fatherIdNumber = dsf['FAR-FODT'] ? ( dsf['FAR-FODT'].toString() + dsf['FAR-PERS'].toString() ) : ''
   contact.spouseIdNumber = dsf['EKT-FODT'] ? ( dsf['EKT-FODT'].toString() + dsf['EKT-PERS'].toString() ) : ''
