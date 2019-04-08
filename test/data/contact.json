@@ -7,5 +7,14 @@
   "fullName": "Gandalf Georg Grå",
   "address": "Fylkesbakken 10",
   "zip": "3715",
-  "city": "Skien"
+  "city": "Skien",
+  "gender": "Male",
+  "alive": true,
+  "motherIdNumber": "01016633333",
+  "fatherIdNumber": "02026511111",
+  "spouseIdNumber": "",
+  "children": [
+    { "childIdNumber": "02028099999" },
+    { "childIdNumber": "04048188888" }
+  ]
 }

@@ -7,5 +7,11 @@
   "fullName": "Gandalf Grå",
   "address": "Fylkesbakken 10",
   "zip": "3715",
-  "city": "Skien"
+  "city": "Skien",
+  "gender": "",
+  "alive": true,
+  "motherIdNumber": "",
+  "fatherIdNumber": "",
+  "spouseIdNumber": "",
+  "children": []
 }
