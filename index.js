@@ -22,12 +22,13 @@ module.exports = (dsf) => {
   contact.city = capitalize.words(dsf.POSTS ? dsf.POSTS.toLowerCase() : '')
   contact.gender = dsf.KJONN ? (dsf.KJONN === 'M' ? 'Male' : 'Female') : ''
   contact.alive = dsf.STAT ? (dsf.STAT !== 'DØD') : ''
-  contact.motherIdNumber = dsf['MOR-FODT'] ? (dsf['MOR-FODT'].toString() + dsf['MOR-PERS'].toString()) : ''
-  contact.fatherIdNumber = dsf['FAR-FODT'] ? (dsf['FAR-FODT'].toString() + dsf['FAR-PERS'].toString()) : ''
-  contact.spouseIdNumber = dsf['EKT-FODT'] ? (dsf['EKT-FODT'].toString() + dsf['EKT-PERS'].toString()) : ''
+  contact.motherIdNumber = dsf['MOR-FODT'] && dsf['MOR-PERS'] ? (dsf['MOR-FODT'].toString() + dsf['MOR-PERS'].toString()) : ''
+  contact.fatherIdNumber = dsf['FAR-FODT'] && dsf['FAR-PERS'] ? (dsf['FAR-FODT'].toString() + dsf['FAR-PERS'].toString()) : ''
+  contact.spouseIdNumber = dsf['EKT-FODT'] && dsf['EKT-PERS'] ? (dsf['EKT-FODT'].toString() + dsf['EKT-PERS'].toString()) : ''
   contact.children = []
   if (dsf['Barn']) {
     contact.children = Array.isArray(dsf['Barn']) ? dsf['Barn'] : [dsf['Barn']]
+    contact.children = contact.children.filter(child => child['BAR-FODT'] && child['BAR-PERS'])
     contact.children = contact.children.map(child => (
       {
         childIdNumber: child['BAR-FODT'].toString() + child['BAR-PERS'].toString()
