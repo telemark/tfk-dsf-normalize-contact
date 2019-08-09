@@ -9,7 +9,7 @@ module.exports = (dsf) => {
     throw new Error('Missing required input: dsf object')
   }
 
-  let contact = {}
+  const contact = {}
 
   contact.personalIdNumber = dsf.FODT.toString() + dsf.PERS.toString()
   contact.birthDate = resolveBirthDate(`${dsf.FODT}${dsf.PERS}`)
