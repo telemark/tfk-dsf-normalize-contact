@@ -50,6 +50,6 @@
   },
   "dependencies": {
     "birthdate-from-id": "2.0.0",
-    "capitalize": "2.0.0"
+    "capitalize": "2.0.3"
   }
 }
