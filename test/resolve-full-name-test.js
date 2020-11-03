@@ -1,7 +1,7 @@
 'use strict'
 
-var tap = require('tap')
-var resolveFullName = require('../lib/resolve-full-name')
+const tap = require('tap')
+const resolveFullName = require('../lib/resolve-full-name')
 
 tap.throws(
   function () {

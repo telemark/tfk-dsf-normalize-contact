@@ -26,8 +26,8 @@ module.exports = (dsf) => {
   contact.fatherIdNumber = dsf['FAR-FODT'] && dsf['FAR-PERS'] ? (dsf['FAR-FODT'].toString() + dsf['FAR-PERS'].toString()) : ''
   contact.spouseIdNumber = dsf['EKT-FODT'] && dsf['EKT-PERS'] ? (dsf['EKT-FODT'].toString() + dsf['EKT-PERS'].toString()) : ''
   contact.children = []
-  if (dsf['Barn']) {
-    contact.children = Array.isArray(dsf['Barn']) ? dsf['Barn'] : [dsf['Barn']]
+  if (dsf.Barn) {
+    contact.children = Array.isArray(dsf.Barn) ? dsf.Barn : [dsf.Barn]
     contact.children = contact.children.filter(child => child['BAR-FODT'] && child['BAR-PERS'])
     contact.children = contact.children.map(child => (
       {
