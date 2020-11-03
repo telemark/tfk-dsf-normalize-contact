@@ -17,9 +17,9 @@ module.exports = (dsf) => {
   contact.middleName = dsf['NAVN-M'] && dsf['NAVN-M'].length > 0 ? capitalize.words(dsf['NAVN-M'].toLowerCase()) : ''
   contact.lastName = capitalize.words(dsf['NAVN-S'].toLowerCase())
   contact.fullName = resolveFullName(contact.firstName, contact.middleName, contact.lastName)
-  contact.address = capitalize.words(dsf.ADR ? dsf.ADR.toLowerCase() : '')
-  contact.zip = dsf.POSTN || ''
-  contact.city = capitalize.words(dsf.POSTS ? dsf.POSTS.toLowerCase() : '')
+  contact.streetAddress = capitalize.words(dsf.ADR ? dsf.ADR.toLowerCase() : '')
+  contact.zipCode = dsf.POSTN || ''
+  contact.zipPlace = capitalize.words(dsf.POSTS ? dsf.POSTS.toLowerCase() : '')
   contact.gender = dsf.KJONN ? (dsf.KJONN === 'M' ? 'Male' : 'Female') : ''
   contact.alive = dsf.STAT ? (dsf.STAT !== 'DØD') : ''
   contact.motherIdNumber = dsf['MOR-FODT'] && dsf['MOR-PERS'] ? (dsf['MOR-FODT'].toString() + dsf['MOR-PERS'].toString()) : ''
