@@ -49,7 +49,7 @@
     "standard": "15.0.0"
   },
   "dependencies": {
-    "birthdate-from-id": "2.0.0",
+    "birthdate-from-id": "2.0.2",
     "capitalize": "2.0.3"
   }
 }
