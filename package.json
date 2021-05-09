@@ -45,7 +45,7 @@
   "license": "MIT",
   "devDependencies": {
     "coveralls": "3.1.0",
-    "tap": "14.11.0",
+    "tap": "15.0.9",
     "standard": "16.0.3"
   },
   "dependencies": {
